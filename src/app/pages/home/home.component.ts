@@ -90,6 +90,8 @@ export class HomeComponent {
   }
 
   constructor() {
+    // Effects are used here just to demonstrate triggering side effects on state changes.
+    // E.G. manually changing the background color of a dom element. Other example use cases for effects would be writing to local storage api etc.
     effect(() => {
       console.log(`The current firstname is: ${this.firstName()}`);
       this.toggleVisualEffect();
