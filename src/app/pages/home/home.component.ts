@@ -53,7 +53,7 @@ import { MatInputModule } from "@angular/material/input";
     <h3>Full Name: {{ fullName() }}</h3> `,
 })
 export class HomeComponent {
-  @ViewChild("effectsEl") visualIndicatorEl: any;
+  @ViewChild("visualIndicatorEl") visualIndicatorEl: any;
 
   firstName = signal("");
   lastName = signal("");
